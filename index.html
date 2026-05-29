@@ -25,18 +25,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=calendar-subdomain-20260528">
+  <link rel="stylesheet" href="styles.css?v=calendar-subdomain-header-20260528">
 </head>
 <body class="calendar-public-page" data-portal-public="true" data-portal-lock-label="Office Calendar">
   <div class="top-rail" aria-hidden="true"></div>
 
   <div class="calendar-public-shell">
-    <header class="calendar-public-header panel" aria-label="KW Leading Edge calendar header">
+    <header class="calendar-public-header calendar-public-header--legend-nav panel" aria-label="KW Leading Edge calendar header">
       <a class="calendar-public-brand" href="https://portal.kwleadingedge.com/" aria-label="KW Leading Edge portal home">
         <span class="brand-lockup">
           <img src="https://portal.kwleadingedge.com/brand/kw-leading-edge-logo.png" alt="Keller Williams Realty Leading Edge" class="brand-logo">
         </span>
       </a>
+
+      <div class="office-calendar-legend office-calendar-legend--header" data-office-calendar-legend data-office-calendar-subscribe="false" aria-label="Office calendar legend" hidden></div>
 
       <nav class="calendar-public-nav" aria-label="Calendar actions">
         <a class="calendar-public-nav-primary" href="https://portal.kwleadingedge.com/">Portal Home</a>
@@ -50,16 +52,14 @@
     </header>
 
     <main class="page-content calendar-public-main">
-      <section class="panel calendar-page-panel calendar-page-panel--compact" id="calendar">
-        <div class="calendar-page-head">
+      <section class="panel calendar-page-panel calendar-page-panel--compact" id="calendar" aria-labelledby="calendarPageTitle">
+        <div class="calendar-page-head calendar-page-head--visually-hidden">
           <div class="calendar-page-title-block">
             <p class="eyebrow small">Public Calendar</p>
-            <h1 data-office-calendar-title>KW Leading Edge Office Calendar</h1>
+            <h1 id="calendarPageTitle" data-office-calendar-title>KW Leading Edge Office Calendar</h1>
             <p class="dashboard-summary calendar-page-summary" data-office-calendar-summary>Training, office events, and agent-facing classes for Keller Williams Leading Edge.</p>
           </div>
         </div>
-
-        <div class="office-calendar-legend office-calendar-legend--public" data-office-calendar-legend data-office-calendar-subscribe="false" aria-label="Office calendar legend" hidden></div>
 
         <div class="calendar-page-frame-shell">
           <iframe
@@ -116,6 +116,6 @@
     </section>
   </div>
 
-  <script src="script.js?v=calendar-subdomain-20260528"></script>
+  <script src="script.js?v=calendar-subdomain-header-20260528"></script>
 </body>
 </html>

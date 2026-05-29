@@ -4555,9 +4555,9 @@ body.has-calendar-share-dialog {
 }
 
 .calendar-page-panel--compact {
-  gap: 10px;
-  min-height: calc(100vh - 132px);
-  padding: 10px 12px 12px;
+  gap: 0;
+  min-height: calc(100vh - 122px);
+  padding: 8px;
 }
 
 .calendar-page-head {
@@ -4566,6 +4566,16 @@ body.has-calendar-share-dialog {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+}
+
+.calendar-page-head--visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .calendar-page-title-block {
