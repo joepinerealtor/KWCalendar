@@ -1,0 +1,36 @@
+{
+  "provider": "tockify",
+  "title": "KW Leading Edge Office Calendar",
+  "summary": "Training, office events, and agent-facing classes for Keller Williams Leading Edge.",
+  "timezone": "America/New_York",
+  "tockify": {
+    "calendar": "leading.edge",
+    "fullUrl": "https://tockify.com/leading.edge/pinboard",
+    "agendaUrl": "https://tockify.com/leading.edge/agenda",
+    "preview": {
+      "component": "mini",
+      "view": "agenda",
+      "maxEvents": 12,
+      "showNavbar": false
+    }
+  },
+  "google": {
+    "calendars": [
+      {
+        "id": "c_05e8142bee45bf90173c9052a6fd2344b51e564961da955294268ff85cbac5bd@group.calendar.google.com",
+        "label": "KWLE - All Agents",
+        "color": "#B00101"
+      },
+      {
+        "id": "c_11327dc6cfd2566fbf61148431d7b778220ff36f2ee0f5a897f6b76c03977711@group.calendar.google.com",
+        "label": "KWLE - Future Agents",
+        "color": "#5F5750"
+      },
+      {
+        "id": "c_9652c0463a10c9e7bcfaf961f2ae1ceb9fceef6bee83049d0a6a4905a8c999c3@group.calendar.google.com",
+        "label": "KWLE - Productivity Coaching",
+        "color": "#039BE5"
+      }
+    ]
+  }
+}
