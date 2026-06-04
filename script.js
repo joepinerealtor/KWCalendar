@@ -851,10 +851,6 @@ function getOfficeCalendarPreviewUrl() {
   return "";
 }
 
-function buildGoogleCalendarSubscribeUrl(calendarId) {
-  return `https://calendar.google.com/calendar/u/0/r?cid=${encodeURIComponent(calendarId)}`;
-}
-
 function getAllOfficeGoogleCalendars() {
   return officeCalendarConfig.google.calendars || [];
 }
@@ -878,9 +874,6 @@ function renderOfficeCalendarLegend() {
   const calendars = getAllOfficeGoogleCalendars();
 
   officeCalendarLegendContainers.forEach((container) => {
-    const showSubscribeLinks = container.dataset.officeCalendarSubscribe === "true"
-      || (container.dataset.officeCalendarSubscribe !== "false" && !IS_PORTAL_PUBLIC_PAGE);
-
     if (!calendars.length) {
       container.hidden = true;
       container.innerHTML = "";
@@ -896,9 +889,6 @@ function renderOfficeCalendarLegend() {
               <span class="office-calendar-legend__swatch" aria-hidden="true"></span>
               <span>${escapeHtml(calendar.label)}</span>
             </span>
-            ${showSubscribeLinks
-              ? `<a class="office-calendar-legend__subscribe" href="${escapeHtml(buildGoogleCalendarSubscribeUrl(calendar.id))}" target="_blank" rel="noreferrer">Subscribe</a>`
-              : ""}
           </div>
         `).join("")}
       </div>

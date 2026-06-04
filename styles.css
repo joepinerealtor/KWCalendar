@@ -3293,7 +3293,7 @@ body.portal-protected .mobile-tech-help-bubble {
 
 .office-calendar-legend__item {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
   gap: 8px;
   min-height: 36px;
@@ -3329,30 +3329,6 @@ body.portal-protected .mobile-tech-help-bubble {
   box-shadow: 0 0 0 1px rgba(35, 35, 35, 0.16);
 }
 
-.office-calendar-legend__subscribe {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 28px;
-  padding: 0.38rem 0.54rem;
-  border: 1px solid var(--kw-red);
-  background: var(--kw-red);
-  color: var(--kw-white);
-  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  line-height: 1;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.office-calendar-legend__subscribe:hover,
-.office-calendar-legend__subscribe:focus-visible {
-  border-color: var(--kw-black);
-  background: var(--kw-black);
-}
-
 .office-calendar-legend--compact .office-calendar-legend__items {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 6px;
@@ -3382,14 +3358,6 @@ body.portal-protected .mobile-tech-help-bubble {
 
 .office-calendar-legend--compact .office-calendar-legend__label span:last-child {
   white-space: nowrap;
-}
-
-.office-calendar-legend--compact .office-calendar-legend__subscribe {
-  width: 100%;
-  min-height: 24px;
-  padding: 0.3rem 0.34rem;
-  font-size: 0.58rem;
-  letter-spacing: 0.06em;
 }
 
 .office-calendar-legend--public {
@@ -3436,14 +3404,6 @@ body.portal-protected .mobile-tech-help-bubble {
 
 .office-calendar-legend--header .office-calendar-legend__label span:last-child {
   white-space: nowrap;
-}
-
-.office-calendar-legend--header .office-calendar-legend__subscribe {
-  width: 100%;
-  min-height: 24px;
-  padding: 0.3rem 0.34rem;
-  font-size: 0.58rem;
-  letter-spacing: 0.06em;
 }
 
 .overview-grid {
