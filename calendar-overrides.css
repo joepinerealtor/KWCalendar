@@ -1,0 +1,10 @@
+@media (min-width: 641px) and (min-aspect-ratio: 4/3) {
+  .calendar-page-frame-shell {
+    min-height: 740px;
+  }
+
+  .calendar-page-frame {
+    height: min(90vh, 1000px);
+    min-height: 740px;
+  }
+}
